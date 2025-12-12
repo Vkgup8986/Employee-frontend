@@ -43,7 +43,7 @@ const EditDepartment = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const response = await axios.put( `http://localhost:5000/api/department/${id}`, department, {
+      const response = await axios.put( `https://employee-backend-api-ruddy.vercel.app/api/department/${id}`, department, {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` }
       })
 
