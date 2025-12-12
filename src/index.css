@@ -1,0 +1,4 @@
+/* If not using Tailwind via PostCSS or a compatible build tool, replace with compiled CSS or remove these lines */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
