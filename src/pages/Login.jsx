@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
     //alert("login");
     try {
-      const response = await axios.post("http://localhost:5000/api/auth/login", { email, password });
+      const response = await axios.post("https://employee-backend-api-ruddy.vercel.app/api/auth/login", { email, password });
 
       if (response.data.success) { //if Successfully post kar diya email and password ko
         login(response.data.user)
