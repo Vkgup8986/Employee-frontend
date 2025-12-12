@@ -103,7 +103,7 @@ const View = () => {
       setLoading(true)
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/employee/${id}`, { // removed leading space
+          `https://employee-backend-api-ruddy.vercel.app/api/employee/${id}`, { // removed leading space
           headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
           }
