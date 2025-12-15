@@ -29,7 +29,7 @@ const Edit = () => {
       // setLoading(true)
       try {
         const response = await axios.get(
-          `http://localhost:5000/api/employee/${id}`, { // removed leading space
+          `https://employee-server-fhax.vercel.app/api/employee/${id}`, { // removed leading space
           headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
           }
