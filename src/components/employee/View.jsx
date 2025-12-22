@@ -103,7 +103,7 @@ const View = () => {
       setLoading(true)
       try {
         const response = await axios.get(
-          `https://employee-server-fhax.vercel.app/api/employee/${id}`, { // removed leading space
+          `https://employee-server-i9od.vercel.app/api/employee/${id}`, { // removed leading space
           headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
           }
@@ -128,7 +128,7 @@ const View = () => {
   if (!employee) return <div>No employee found</div>
 
   const profileImage = employee.userId?.profileImage
-    ? `https://employee-server-fhax.vercel.app/public/Uploads/${employee.userId.profileImage}`
+    ? `https://employee-server-i9od.vercel.app/public/Uploads/${employee.userId.profileImage}`
     : null
 
   return (

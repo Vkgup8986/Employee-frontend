@@ -51,10 +51,10 @@ const List = () => {
                  imgSrc = filename;
                } else if (filename.includes("public/") || filename.includes("Uploads/")) {
                  // if backend returned "public/Uploads/xxx.jpg" or "Uploads/xxx.jpg"
-                 imgSrc = `https://employee-server-fhax.vercel.app/${filename.replace(/^\/+/, "")}`;
+                 imgSrc = `https://employee-server-i9od.vercel.app/${filename.replace(/^\/+/, "")}`;
                } else {
                  // most common: DB stores only filename (e.g. "169xxx.jpg")
-                 imgSrc = `https://employee-server-fhax.vercel.app/public/Uploads/${filename}`;
+                 imgSrc = `https://employee-server-i9od.vercel.app/public/Uploads/${filename}`;
                }
              }
              return {

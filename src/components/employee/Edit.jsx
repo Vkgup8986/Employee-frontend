@@ -29,7 +29,7 @@ const Edit = () => {
       // setLoading(true)
       try {
         const response = await axios.get(
-          `https://employee-server-fhax.vercel.app/api/employee/${id}`, { // removed leading space
+          `https://employee-server-i9od.vercel.app/api/employee/${id}`, { // removed leading space
           headers: {
             "Authorization": `Bearer ${localStorage.getItem('token')}`
           }
@@ -69,7 +69,7 @@ const Edit = () => {
     // const formDataObj = new FormData()
     // Object.keys(formData).forEach((key) => {formDataObj.append(key, formData[key]) })
     try {
-      const response = await axios.put(`https://employee-backend-api-ruddy.vercel.app/api/employee/${id}`,employee, {
+      const response = await axios.put(`https://employee-server-i9od.vercel.app/api/employee/${id}`,employee, {
         headers: { "Authorization": `Bearer ${localStorage.getItem('token')}`, }
       })
 

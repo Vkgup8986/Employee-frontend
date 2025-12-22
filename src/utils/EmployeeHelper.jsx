@@ -16,7 +16,7 @@ export const fetchDepartments = async () => {
   let departments
 
   try {
-    const response = await axios.get('https://employee-server-fhax.vercel.app/api/department', {
+    const response = await axios.get('https://employee-server-i9od.vercel.app/api/department', {
       headers: {
         "Authorization": `Bearer ${localStorage.getItem('token')}`
       }
